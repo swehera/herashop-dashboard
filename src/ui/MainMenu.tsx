@@ -41,7 +41,7 @@ const MainMenu = () => {
   return (
     <div className=" w-full  flex ">
       {sideBar && (
-        <div className=" w-[35%] md:w-[17%] bg-[#F3F4F6] min-h-screen fixed  z-50 ">
+        <div className=" w-[45%] md:w-[17%] bg-[#F3F4F6] min-h-screen fixed  z-50 ">
           {/* logo section work start */}
 
           <div className="  w-full flex flex-col items-center relative px-1">

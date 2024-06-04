@@ -63,7 +63,7 @@ const Dashboard = () => {
 
       {/* file input upload section start */}
       <div className=" w-[90%] md:w-[80%]  grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-2">
-        <div className=" cursor-pointer border border-gray-300 rounded-md flex flex-col items-center justify-center gap-y-2 px-20 py-10">
+        <div className=" cursor-pointer border border-gray-300 rounded-md flex flex-col items-center justify-center gap-y-2 px-5 py-10">
           <div>
             <GoPlusCircle className=" text-6xl text-gray-400" />
           </div>
