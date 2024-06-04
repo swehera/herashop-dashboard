@@ -41,10 +41,10 @@ const MainMenu = () => {
   return (
     <div className=" w-full  flex ">
       {sideBar && (
-        <div className=" w-full md:w-[20%] bg-[#F3F4F6] min-h-screen z-50">
+        <div className=" w-[35%] md:w-[17%] bg-[#F3F4F6] min-h-screen fixed  z-50 ">
           {/* logo section work start */}
 
-          <div className="  w-full flex flex-col items-center relative ">
+          <div className="  w-full flex flex-col items-center relative px-1">
             <MdOutlineCancel
               onClick={() => setSideBar(false)}
               className=" text-gray-600 cursor-pointer text-2xl absolute right-3 top-2"
@@ -62,9 +62,9 @@ const MainMenu = () => {
                 </p>
                 <p
                   onClick={() => setShowShop(!showShop)}
-                  className=" cursor-pointer  flex items-center gap-x-2 text-gray-600 font-semibold px-5 py-1 rounded-md bg-white "
+                  className=" cursor-pointer   flex items-center gap-x-2 text-gray-600 font-semibold px-5 py-1 rounded-md bg-white "
                 >
-                  <GrSettingsOption className=" text-xl" />
+                  <GrSettingsOption className=" text-2xl" />
                   Manage Shop{" "}
                   <span>
                     {showShop ? <FaAngleDown /> : <IoIosArrowForward />}
