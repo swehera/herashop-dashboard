@@ -57,11 +57,15 @@ const MainMenu = () => {
             </Link>
             <div>
               <div className=" mt-5 flex flex-col gap-y-2">
-                <p className=" flex items-center gap-x-2 text-gray-600 font-semibold px-5 py-1 rounded-md bg-white ">
+                <Link
+                  href={"/"}
+                  className=" flex items-center gap-x-2 text-gray-600 font-semibold px-5 py-1 rounded-md bg-white "
+                >
                   <MdOutlineDashboard className=" text-xl" />
                   Dashboard
-                </p>
-                <p
+                </Link>
+                <Link
+                  href={"/inventory/new"}
                   onClick={() => setShowShop(!showShop)}
                   className=" cursor-pointer   flex items-center gap-x-2 text-gray-600 font-semibold px-5 py-1 rounded-md bg-white "
                 >
@@ -70,7 +74,7 @@ const MainMenu = () => {
                   <span>
                     {showShop ? <FaAngleDown /> : <IoIosArrowForward />}
                   </span>
-                </p>
+                </Link>
                 {showShop && (
                   <div className=" ">
                     <p className="  text-gray-600 font-semibold px-5 py-1 rounded-md bg-white ">
