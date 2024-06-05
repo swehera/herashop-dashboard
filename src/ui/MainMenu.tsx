@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { AiOutlineShop } from "react-icons/ai";
 import { BsCart2 } from "react-icons/bs";
@@ -49,11 +50,11 @@ const MainMenu = () => {
               onClick={() => setSideBar(false)}
               className=" text-gray-600 cursor-pointer text-2xl absolute right-3 top-2"
             />
-            <div>
+            <Link href={"/"}>
               <p className=" text-purple-600 font-semibold text-xl mt-8">
                 HeraEasy
               </p>
-            </div>
+            </Link>
             <div>
               <div className=" mt-5 flex flex-col gap-y-2">
                 <p className=" flex items-center gap-x-2 text-gray-600 font-semibold px-5 py-1 rounded-md bg-white ">
